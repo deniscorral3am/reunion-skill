@@ -21,10 +21,13 @@ llamadas de venta son con gente de fuera de su organización.
 - Si está en Free, Pro o Max: díselo claro (solo Team y Enterprise) y que valore Team.
 - Si la organización tiene ZDR, HIPAA-ready o CMEK: no está disponible.
 - Team: viene encendido; Enterprise: lo activa un admin.
-- Si vende a clientes externos: el admin tiene que permitir invitados externos (por defecto Claude no entra). Si no
-  es admin, escríbele el mensaje para pedírselo.
-- Conectar Google Meet y elegir auto-join o añadirlo a mano, siguiendo la ayuda oficial. Conectar las herramientas
-  que quiera que consulte (pedirá permiso la primera vez; esas respuestas cuentan contra su uso).
+- Ajustes del admin: Ajustes de la organización → Productos → Claude Meetings (beta): encendido, invitados externos
+  y conectores en reuniones. Si no es admin, escríbele el mensaje para pedírselo.
+- Si vende a clientes externos: por defecto Claude no entra (y se va si entra alguien de fuera). Si se permite, con
+  invitados externos Claude solo escucha, toma notas y avisa en el chat: **no contesta**. Díselo claro.
+- Conectar Google Calendar, abrir Meetings en Claude, elegir la reunión y «Add Claude». Auto-join en Ajustes →
+  Capacidades → Meetings (todas o todas menos uno a uno). Herramientas conectadas: pide permiso la primera vez y
+  cuentan contra su uso.
 - Prueba sin cliente antes de la primera llamada de verdad.
 
 ## Paso 2. El cliente
@@ -37,10 +40,10 @@ audio, si prefiere que no esté se quita), la frase para decirlo en voz alta al 
 (proceso, números, quién decide, qué ha probado).
 
 ## Paso 4. Durante la llamada
-En el mismo archivo, la lista de frases exactas para pedirle a Claude en la reunión: empezar el documento con el
-problema tal como lo cuenta, apuntar sus números, montar la pizarra de su proceso marcando dónde pierde clientes y
-compartir el resumen antes de acabar. Si no tiene invitados externos permitidos, plan B: usarlo en las reuniones
-internas y tomar notas a mano con el cliente.
+En el mismo archivo: lo que le pedirá a Claude en la reunión interna para preparar la llamada (pizarra del cliente,
+preguntas, resumen) y, para la llamada con el cliente, qué sacarle (sus números y sus frases) sabiendo que Claude
+solo toma notas con invitados externos. Si no están permitidos, plan B: notas a mano y Claude en lo interno.
+También sirve para el onboarding de un cliente y la reunión de seguimiento (ver `DOCUMENTO.md`, sección 4).
 
 ## Paso 5. Al colgar: la propuesta
 Pídele que pegue las notas, las tareas y la transcripción de la página de la reunión en claude.ai. En `propuesta.md`:
